@@ -56,7 +56,7 @@ function squareClick() {
   }
 }
 
-// INCREMENT MOVE
+// 
 
 function incrementMove() {
   move += 1;
@@ -75,7 +75,7 @@ function incrementMove() {
   checkForTie();
 }
 
-// CHECK FOR WIN
+// проверка на победу
 
 function checkForWin() {
   const lines = [
@@ -114,7 +114,7 @@ function playerWon() {
   continueGame();
 }
 
-// CHECK FOR TIE
+// ничья
 
 function checkForTie() {
   const squares = [
@@ -141,7 +141,7 @@ function checkForTie() {
   }
 }
 
-// CONTINUE / RESTART / RESET
+// продолжение/заново
 
 function continueGame() {
   removeSquareClick();
@@ -164,7 +164,7 @@ function reset() {
   infoText.innerHTML = `${nextPlayer}'s turn to start`;
 }
 
-// START GAME
+// старт
 
 function startGame() {
   startGameBtm.addEventListener("click", () => {
